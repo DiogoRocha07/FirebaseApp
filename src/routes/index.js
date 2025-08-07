@@ -5,6 +5,7 @@ import Register from "../pages/Register";
 import Admin from "../pages/Admin";
 
 import Private from "./Private";
+// Pagina route app
 
 function RoutesApp() {
   return (
