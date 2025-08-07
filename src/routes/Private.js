@@ -12,7 +12,7 @@ export default function Private({ children }) {
   useEffect(() => {
     async function checkLogin() {
       const unsub = onAuthStateChanged(auth, (user) => {
-        //se tem user logado
+        // Se tem user logado
         if (user) {
           const userData = {
             uid: user.uid,
@@ -24,7 +24,7 @@ export default function Private({ children }) {
           setLoading(false);
           setSigned(true);
         } else {
-          //nao possui user logado
+          // Não possui usuario logado
           setLoading(false);
           setSigned(false);
         }
